@@ -8,6 +8,8 @@ const nextBtn = document.querySelector(".next");
 
 const prevBtn = document.querySelector(".prev");
 
+const dots = document.querySelectorAll(".dot");
+
 
 function getCardsPerView(){
 
@@ -39,6 +41,14 @@ function updateSlider(){
 
     track.style.transform =
         `translateX(-${currentIndex * cardWidth}px)`;
+
+    dots.forEach(dot => {
+
+    dot.classList.remove("active");
+
+});
+
+dots[currentIndex].classList.add("active");
 
 }
 
