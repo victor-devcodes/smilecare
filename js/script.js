@@ -92,17 +92,12 @@ window.addEventListener("resize",()=>{
 
 });
 
-setInterval(()=>{
-
-    nextBtn.click();
-
-},10000);
 
 // stop card slide on hover
 
 let autoSlide = setInterval(() => {
     nextBtn.click();
-}, 10000);
+}, 8000);
 
 const slider = document.querySelector(".testimonial-slider");
 
@@ -113,7 +108,7 @@ slider.addEventListener("mouseenter", () => {
 slider.addEventListener("mouseleave", () => {
     autoSlide = setInterval(() => {
         nextBtn.click();
-    }, 10000);
+    }, 8000);
 });
 
 
@@ -128,9 +123,11 @@ menuBtn.addEventListener("click",()=>{
 
     navLinks.classList.toggle("active");
 
+    menuBtn.classList.toggle("open");
+
 });
 
-menuBtn.classList.toggle("open");
+
 
 // Close Menu After Clicking a Link
 
