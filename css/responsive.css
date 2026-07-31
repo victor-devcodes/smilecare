@@ -1,3 +1,6 @@
+/* Large Tablets & Small Laptops */
+
+
 @media(max-width:992px){
 
 .testimonial-card{
@@ -9,9 +12,56 @@
 }
 
 
-        /*  Mobile
-                        */
+@media (max-width:992px){
 
+.services-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media (max-width:992px){
+
+.footer-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+/* Tablets & Large Phones */
+@media (max-width:768px){
+
+h1{
+
+    font-size:2.3rem;
+
+}
+
+h2{
+
+    font-size:2rem;
+
+}
+
+}
+
+                            /* Section Padding*/
+
+@media (max-width:768px){
+
+section{
+
+    padding:70px 5%;
+
+}
+
+}
 
 @media(max-width:768px){
 
@@ -45,17 +95,28 @@
 
     align-items:center;
 
-    gap:25px;
+    gap:20px;
 
     padding:30px 0;
 
-    display:none;
+    transform:translateY(-20px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.5s;
 
 }
 
 .nav-links.active{
 
     display:flex;
+    transform:translateY(0);
+
+    opacity:1;
+
+    visibility:visible;
 
 }
 
@@ -67,6 +128,60 @@
 
 }
 
+
+                            /* Hero section */
+
+@media (max-width:768px){
+
+.hero-content{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.hero-text{
+
+    order:1;
+
+}
+
+.hero-image{
+
+    order:2;
+
+}
+
+}
+
+
+                            /* About section */
+@media (max-width:768px){
+
+.about-content{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+                            
+                            /* Service section */
+@media (max-width:768px){
+
+.services-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+
+                            
+                            /* Testimonial section */
 @media(max-width:768px){
 
 .testimonial-card{
@@ -77,6 +192,8 @@
 
 }
 
+                            /* Contact section */
+
 @media(max-width:768px){
 
 .contact-container{
@@ -86,6 +203,8 @@
 }
 
 }
+
+                            /* Footer section */
 
 @media(max-width:768px){
 
@@ -98,3 +217,13 @@
 }
 
 }
+
+
+
+/* Small Phones */
+@media (max-width: 576px) {
+
+}
+
+
+

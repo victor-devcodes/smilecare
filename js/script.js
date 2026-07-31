@@ -118,3 +118,30 @@ slider.addEventListener("mouseleave", () => {
 
 
 
+// Hamburger
+
+const menuBtn = document.querySelector(".menu-toggle");
+
+const navLinks = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click",()=>{
+
+    navLinks.classList.toggle("active");
+
+});
+
+menuBtn.classList.toggle("open");
+
+// Close Menu After Clicking a Link
+
+const links = document.querySelectorAll(".nav-links a");
+
+links.forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        navLinks.classList.remove("active");
+
+    });
+
+});

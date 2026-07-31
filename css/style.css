@@ -13,7 +13,11 @@ body{
     background:#F8FAFC;
     color:#333;
 }
+html{
 
+    scroll-behavior:smooth;
+
+}
 /* =====================
    NAVIGATION
 ===================== */
