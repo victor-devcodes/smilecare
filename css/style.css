@@ -103,13 +103,7 @@ html{
     background:#1D6FE0;
 }
 
-.menu-toggle{
-    display:none;
-    border:none;
-    background:none;
-    font-size:2rem;
-    cursor:pointer;
-}
+
 
 /* =====================
    HERO SECTION
@@ -121,7 +115,7 @@ html{
     justify-content:space-between;
     padding:80px 8%;
     background:#F8FAFC;
-    margin-top:90px;
+    margin-top:70px;
 }
 .hero-tag{
 
@@ -935,4 +929,34 @@ footer{
 
     z-index:999;
 
+}
+
+.menu-toggle{
+    display:none;
+    border:none;
+    background:none;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+.mobile-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.mobile-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.mobile-contact{
+display: hidden;
 }

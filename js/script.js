@@ -155,17 +155,19 @@ slider.addEventListener("mouseleave", () => {
 // Hamburger
 
 const menuBtn = document.querySelector(".menu-toggle");
+const mobileMenu = document.querySelector(".mobile-menu");
 
-const navLinks = document.querySelector(".nav-links");
+menuBtn.addEventListener("click", () => {
 
-menuBtn.addEventListener("click",()=>{
+    mobileMenu.classList.toggle("active");
 
-    navLinks.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
 
-    menuBtn.classList.toggle("open");
+    menuBtn.innerHTML = mobileMenu.classList.contains("active")
+        ? "✕"
+        : "☰";
 
 });
-
 
 
 // Close Menu After Clicking a Link

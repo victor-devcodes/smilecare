@@ -71,13 +71,18 @@ section{
 
     height:40px;
 }
+}
 
+                             /* NAVBAR */
 @media(max-width:768px){
 
+body.menu-open{
+    overflow:hidden;
+}
 .menu-toggle{
 
     display:block;
-
+    z-index: 1001;
     background:none;
 
     border:none;
@@ -90,50 +95,95 @@ section{
 
 .navbar{
     padding: 10px 8%;
+    z-index: 1000;
 }
-.nav-links{
 
-    position:absolute;
 
-    top:100%;
+.mobile-menu{
 
-    left:0;
+    position:fixed;
 
-    width:100%;
+    inset:0;
 
     background:white;
 
+    display:flex;
+
     flex-direction:column;
+
+    justify-content:center;
 
     align-items:center;
 
-    gap:20px;
+    gap:40px;
 
-    padding:30px 0;
+    transform:translateX(100%);
 
-    transform:translateY(-20px);
-
-    opacity:0;
-
+    transition:.4s ease;
     visibility:hidden;
-
-    transition:.5s;
+    z-index:999;
 
 }
 
-.nav-links.active{
+.mobile-menu.active{
 
-    transform:translateY(0);
-
+    transform:translateX(0);
     opacity:1;
 
     visibility:visible;
 
 }
 
-.navbar .btn{
+.nav-links{
+    display:flex;
 
-    display:none;
+    flex-direction:column;
+
+    align-items:flex-start;
+    padding: 40px;
+
+    gap:30px;
+
+    width:100%;
+}
+
+.nav-links a{
+
+    font-size:1.8rem;
+
+    font-weight:700;
+    
+    
+}
+.mobile-contact{
+
+    color:#666;
+
+    text-align:center;
+
+    line-height:1.8;
+
+}
+.mobile-buttons{
+
+    width:90%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.mobile-buttons .btn,
+.mobile-buttons .btn-secondary{
+
+    width:100%;
+
+    text-align:center;
+
+    padding:18px;
 
 }
 
@@ -321,6 +371,43 @@ section{
 
 }
 
+                        /* Hamburger slideshow*/
+
+/*@media(max-width:768px){
+
+.mobile-menu{
+
+    position:fixed;
+
+    inset:0;
+
+    background:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:40px;
+
+    transform:translateX(100%);
+
+    transition:.4s ease;
+
+    z-index:999;
+
+}
+
+.mobile-menu.active{
+
+    transform:translateX(0);
+
+}
+
+}*/
 
                             /* Small Phones */
 @media (max-width: 576px) {
@@ -338,6 +425,3 @@ section{
     }
 
 }
-
-
-
