@@ -10,7 +10,46 @@ const prevBtn = document.querySelector(".prev");
 
 const dots = document.querySelectorAll(".dot");
 
+                // Testimonial Card swipe on mobile
 
+let startX = 0;
+let endX = 0;
+track.addEventListener("touchstart", (e) => {
+
+    startX = e.touches[0].clientX;
+
+});
+track.addEventListener("touchend", (e) => {
+
+    endX = e.changedTouches[0].clientX;
+
+    handleSwipe();
+
+});
+function handleSwipe(){
+
+    const swipeDistance = startX - endX;
+
+    // Ignore tiny movements
+    if(Math.abs(swipeDistance) < 50){
+        return;
+    }
+
+    if(swipeDistance > 0){
+
+        // Swipe left → next card
+        nextBtn.click();
+
+    }else{
+
+        // Swipe right → previous card
+        prevBtn.click();
+
+    }
+
+}
+
+                            // Stop
 function getCardsPerView(){
 
     if(window.innerWidth <= 768){

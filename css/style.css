@@ -443,7 +443,7 @@ html{
     display:flex;
 
     transition:transform .6s ease;
-
+    touch-action:pan-y;
 }
 
 .testimonial-card{
@@ -793,7 +793,7 @@ html{
 }
 
 /*==========================
-        FOOTER
+        MAP
 ===========================*/
 
 .map iframe{

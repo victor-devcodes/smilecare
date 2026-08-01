@@ -42,10 +42,9 @@ h1{
     font-size:1rem;
 
 }
+.section-title h2{
 
-h2{
-
-    font-size:2rem;
+    font-size:1.5rem;
 
 }
 .logo span{
@@ -239,7 +238,7 @@ section{
     display: grid;
 }
 .about-content h2{
-    font-size: 32px;
+    font-size: 1.5rem;
 }
                             
                             /* Service section */
@@ -307,12 +306,36 @@ section{
         display:none;
 
     }
+    .map iframe{
+    height: 250px;
+    }
+     .map{
+        width: 100%;
+        top: 0;
+        display: block;
+        padding: 0;
+        margin: 0;
+        height: 250px;
+
+    }
 
 }
 
 
                             /* Small Phones */
 @media (max-width: 576px) {
+    .map{
+        width: 100%;
+        top: 0;
+        display: block;
+        padding: 0;
+        margin: 0;
+        height: 250px;
+
+}
+.map iframe{
+    height: 250px;
+    }
 
 }
 
