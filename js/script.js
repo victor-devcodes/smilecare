@@ -142,3 +142,56 @@ links.forEach(link=>{
     });
 
 });
+
+                            // reveal
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealSections(){
+
+    reveals.forEach(section => {
+
+        const top = section.getBoundingClientRect().top;
+
+        if(top < window.innerHeight - 100){
+
+            section.classList.add("active");
+
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealSections);
+
+revealSections();
+
+                                    // Back to top
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 400){
+
+        backToTop.style.display = "block";
+
+    }else{
+
+        backToTop.style.display = "none";
+
+    }
+
+});
+
+backToTop.addEventListener("click", () => {
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+});
