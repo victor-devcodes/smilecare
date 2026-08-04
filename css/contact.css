@@ -1,0 +1,52 @@
+                        /* About Hero */
+
+.page-hero{
+
+    padding:140px 0 50px;
+
+    background:linear-gradient(
+        rgba(47,128,237,.85),
+        rgba(47,128,237,.85)
+    ),
+    url("../images/hero/dentist2.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+.page-hero h1{
+
+    font-size:3.5rem;
+
+    margin-bottom:20px;
+
+}
+.page-hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+
+}
+
+
+.contact{
+    background: #2F80ED;
+}
+
+.contact-form .btn{
+    border: 2px solid #fff;
+}
+.contact-form label{
+    color:#fff;
+    margin-bottom: -15px;
+}

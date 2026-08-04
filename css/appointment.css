@@ -1,0 +1,22 @@
+.contact-form{
+    padding: 100px 30%;
+    background:#edf9ff;
+}
+.form-logo{
+    background: #edf9ff;
+    padding: 100px 30%;
+    display: grid;
+    justify-content: center;
+    margin-bottom: -150px;
+}
+.logo{
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+}
+
+.logo span{
+    font-size:1.5rem;
+    font-weight:700;
+    color:#2F80ED;
+}

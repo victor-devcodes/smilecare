@@ -45,7 +45,7 @@
 
             <div class="mobile-buttons">
 
-            <a href="#" class="btn">
+            <a href="appointment.html" class="btn">
                 Book Appointment
             </a>
 
@@ -61,115 +61,26 @@
     </header>
 
     <main>
-        <section class="hero" id="home">
-            
-            <div class="hero-content">
-                 <span class="hero-tag">
-                    ⭐ Trusted by 5,000+ Happy Patients
-                 </span>
-                <h1>Healthy Smiles Start Here.</h1>
+        <section class="page-hero">
 
-                <p>
-                    Experience exceptional dental care with our
-                    friendly team, advanced technology, and personalized treatment.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#" class="btn">
-                        Book Appointment
-                    </a>
-
-                    <a href="services.html" class="btn-secondary">
-                        Our Services
-                    </a>
-
-                </div>
-                    <div class="hero-stats">
-
-                        <div>
-
-                            <h3>15+</h3>
-
-                            <span>Years Experience</span>
-
-                        </div>
-
-                        <div>
-
-                            <h3>5000+</h3>
-
-                            <span>Happy Patients</span>
-
-                        </div>
-
-                        <div class="rating">
-
-                            <h3>4.9★</h3>
-
-                            <span>Google Rating</span>
-
-                        </div>
-
-                    </div>
-            </div>
-            
-            <div class="hero-image">
-                <div class="hero-image-box">
-                <img src="images/hero/dentist.png"
-                    alt="Professional dentist">
-
-            </div>
-           </div>
-        </section>
-
-
-            <!-- Call To Action-->
-
-        <section class="cta reveal" id="cta">
             <div class="container">
-            <div class="cta-content">
 
-                <h2>Ready for a Healthier Smile?</h2>
+                <h1>Contact Us</h1>
 
                 <p>
-                    Schedule your appointment today and experience
-                    compassionate, modern dental care.
+                    We'd love to hear from you. Schedule an appointment, ask a question,
+                    or visit our clinic today.
                 </p>
 
-                <div class="cta-buttons">
-
-                    <a href="#" class="btn">
-                        Book Appointment
-                    </a>
-
-                    <a href="tel:+1234567890" class="btn-secondary">
-                        Call Now
-                    </a>
-
-                </div>
-
             </div>
-            </div>
+
         </section>
-
-  
 
                         <!--   Contact Us-->
 
 
         <section class="contact" id="contact">
             <div class="container">
-            <div class="contact-title">
-
-                <h2>Contact Us</h2>
-
-                <p>
-                    Have questions or need to book an appointment?
-                    We'd love to hear from you.
-                </p>
-
-            </div>
 
             <div class="contact-container">
 
@@ -216,23 +127,44 @@
                 <!-- Right Column -->
 
                 <form class="contact-form">
-
+                    <label for="name"> Full Name</label>
                     <input
                         type="text"
+                        id="name"
                         placeholder="Your Name"
                         required>
 
+                    <label for="email"> Email Address</label>
                     <input
                         type="email"
+                        id="email"
                         placeholder="Email Address"
                         required>
 
+                    <label for="phone">Phone Number</label>
                     <input
                         type="tel"
+                        id="phone"
                         placeholder="Phone Number">
+                    <label for="service"> Select Services </label>
+                    <select required id="service">
 
+                        <option value="">Select a Service</option>
+
+                        <option>General Check-up</option>
+
+                        <option>Cosmetic Dentistry</option>
+
+                        <option>Dental Implants</option>
+
+                        <option>Emergency Care</option>
+
+                    </select>
+
+                    <label for="text"> Additional Info</label>
                     <textarea
                         rows="6"
+                        id="text"
                         placeholder="Your Message"></textarea>
 
                     <button type="submit" class="btn">
@@ -247,6 +179,34 @@
             </div>
         </section>
 
+            <!-- Call To Action-->
+
+        <section class="cta reveal" id="cta">
+            <div class="container">
+            <div class="cta-content">
+
+                <h2>Ready for a Healthier Smile?</h2>
+
+                <p>
+                    Schedule your appointment today and experience
+                    compassionate, modern dental care.
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="appointment.html" class="btn">
+                        Book Appointment
+                    </a>
+
+                    <a href="tel:+1234567890" class="btn-secondary">
+                        Call Now
+                    </a>
+
+                </div>
+
+            </div>
+            </div>
+        </section>
                          <!-- MAP -->
 
         <section class="map" id="map">

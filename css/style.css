@@ -759,7 +759,8 @@ html{
 
 }
 .contact-form input,
-.contact-form textarea{
+.contact-form textarea,
+.contact-form select{
 
     width:100%;
 
@@ -775,7 +776,8 @@ html{
 
 }
 .contact-form input:focus,
-.contact-form textarea:focus{
+.contact-form textarea:focus,
+.contact-form select:focus{
 
     border-color:#2F80ED;
 
